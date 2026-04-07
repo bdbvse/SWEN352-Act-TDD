@@ -2,6 +2,7 @@ package edu.rit.swen352.tdd.hard;
 
 /**
  * MyList is a flexible-sized sequence of elements with no gaps.
+ * All elements must be non-{@code null}.
  *
  * <p>
  * You must implement these features:
@@ -11,7 +12,7 @@ package edu.rit.swen352.tdd.hard;
  *   <li>size: queries how many elements in the list</li>
  *   <li>get: returns the element at a specific index;
  *     throw {@link java.util.NoSuchElementException} if the index is outside the size of the list</li>
- *   <li>add: add an element to the end of the list; nulls not allowed</li>
+ *   <li>add: add an element to the end of the list</li>
  *   <li>remove: remove an element by index</li>
  *   <li>forEach: iterates over each element and executes the {@link java.util.function.Consumer} parameter</li>
  * </ul>

@@ -2,7 +2,11 @@ package edu.rit.swen352.tdd.hard;
 
 /**
  * MySet is a flexible-sized, unordered collection of elements.
- * The {@link Object#equals(Object)} method is used to determine if two values are equal.
+ * All elements must be non-{@code null}.
+ *
+ * <p>
+ *   The {@link Object#equals(Object)} method is used to determine if two values are equal.
+ * </p>
  *
  * <p>
  * You must implement these features:

@@ -10,9 +10,7 @@ package edu.rit.swen352.tdd.easy;
  *   <li>factories:
  *     <ul>
  *       <li>{@code empty()} -- return an empty optional</li>
- *       <li>{@code of(value:T)} -- return a non-empty optional
- *           throws {@link java.lang.NullPointerException} if {@code value} is {@code null}
- *       </li>
+ *       <li>{@code of(value:T)} -- return a non-empty optional</li>
  *       <li>{@code ofNullable(value:T)} -- return an optional that might be empty</li>
  *       <li>NFR: hide any constructors; forces clients to use a factory function</li>
  *     </ul>

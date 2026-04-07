@@ -8,7 +8,8 @@ record Money() {}
 
 /**
  * An American bank account that permits deposits and withdrawals.
- * The balance must never be negative.
+ * The balance must never be negative.  The balance must be stored
+ * as a {@link Money} value.
  *
  * <p>
  * You must implement these features:
@@ -23,6 +24,7 @@ record Money() {}
  *   <li>isAccountEmpty(): queries whether the balance is zero</li>
  *   <li>deposit(amount): add a {@link Money} amount to the balance</li>
  *   <li>withdraw(amount): subtract a {@link Money} amount from the balance</li>
+ *   <li>toString(): returns a human-friendly representation of the account balance, eg $20.50</li>
  * </ul>
  */
 public class BankAccount {

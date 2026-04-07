@@ -10,9 +10,9 @@ package edu.rit.swen352.tdd.easy;
  * <ul>
  *   <li>constructor:
  *     <ul>
- *       <li>with both lower and upper bounds</li>
- *       <li>one that supplies a lower bound and defaults the upper limit to MAX_INTEGER</li>
- *       <li>a third (no-args) that also defaults the lower limit to 0</li>
+ *       <li>a ctor with both lower and upper bounds</li>
+ *       <li>another ctor that supplies a lower bound and defaults the upper limit to {@code Integer.MAX_VALUE}</li>
+ *       <li>a third ctor (no-args) that <em>also</em> defaults the lower limit to 0</li>
  *       <li>NOTE: once set in a ctor the bounds attributes must be fixed</li>
  *     </ul>
  *   </li>
