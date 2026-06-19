@@ -17,22 +17,50 @@ class CounterTest {
     @Test
     @DisplayName("all-arg ctor")
     void ctor_1() {
-      Counter counter = new Counter(1, 10);
-      assertNotNull(counter);
+      // Arrange
+      final int lower = 1;
+      final int upper = 10;
+
+      // Act
+      Counter counter = new Counter(lower, upper);
+
+      // Assert
+      assertAll("group assertions"
+        , () -> assertNotNull(counter)
+        , () -> assertEquals(lower, counter.lower, "lower bound is incorrect")
+        , () -> assertEquals(upper, counter.upper, "upper bound is incorrect")
+      );
     }
 
     @Test
     @DisplayName("default upper bound")
     void ctor_2() {
-      Counter counter = new Counter(1);
-      assertNotNull(counter);
+      // Arrange
+      final int lower = 1;
+
+      // Act
+      Counter counter = new Counter(lower);
+
+      // Assert
+      assertAll("group assertions"
+        , () -> assertNotNull(counter)
+        , () -> assertEquals(lower, counter.lower, "lower bound is incorrect")
+        , () -> assertEquals(Integer.MAX_VALUE, counter.upper, "upper bound is incorrect")
+      );
     }
 
     @Test
     @DisplayName("default both bounds")
     void ctor_3() {
+      // Act
       Counter counter = new Counter();
-      assertNotNull(counter);
+
+      // Assert
+      assertAll("group assertions"
+        , () -> assertNotNull(counter)
+        , () -> assertEquals(0, counter.lower, "lower bound is incorrect")
+        , () -> assertEquals(Integer.MAX_VALUE, counter.upper, "upper bound is incorrect")
+      );
     }
   }
 }
