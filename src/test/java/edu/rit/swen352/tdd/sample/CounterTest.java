@@ -1,4 +1,4 @@
-package edu.rit.swen352.tdd.easy;
+package edu.rit.swen352.tdd.sample;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

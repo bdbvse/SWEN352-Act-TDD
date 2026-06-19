@@ -1,4 +1,4 @@
-package edu.rit.swen352.tdd.easy;
+package edu.rit.swen352.tdd.sample;
 
 /**
  * An integral counter with an optional lower and upper bound.
@@ -11,7 +11,7 @@ package edu.rit.swen352.tdd.easy;
  *   <li>constructor:
  *     <ul>
  *       <li>a ctor that supplies both lower and upper bounds</li>
- *       <li>another ctor that supplies a lower bound and defaults the upper limit to {@code Integer.MAX_VALUE}</li>
+ *       <li>another ctor that supplies a lower bound; upper is defaulted to {@code Integer.MAX_VALUE}</li>
  *       <li>a third ctor (no-args) that <em>also</em> defaults the lower limit to 0</li>
  *       <li>NOTE: once set in a ctor the bounds attributes must be fixed</li>
  *     </ul>

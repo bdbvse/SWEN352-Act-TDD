@@ -10,15 +10,15 @@ package edu.rit.swen352.tdd.easy;
  * <ul>
  *   <li>constructor:
  *     <ul>
- *       <li>a ctor with an initial balance, as a {@code float} value</li>
- *       <li>a no-arg ctor that sets the initial balance to zero</li>
+ *       <li>a ctor that supplies an initial balance, as a {@code float} value</li>
+ *       <li>a no-arg ctor that defaults the initial balance to zero</li>
  *     </ul>
  *   </li>
- *   <li>getBalance: returns the current balance</li>
- *   <li>isAccountEmpty(): queries whether the balance is zero</li>
- *   <li>deposit(amount): add a {@code float} amount to the balance</li>
- *   <li>withdraw(amount): subtract a {@code float} amount from the balance</li>
- *   <li>toString(): returns a human-friendly representation of the account balance, eg $20.50</li>
+ *   <li>{@code getBalance()}: returns the current balance</li>
+ *   <li>{@code isAccountEmpty()}: queries whether the balance is zero</li>
+ *   <li>{@code deposit(amount)}: add a {@code float} amount to the balance</li>
+ *   <li>{@code withdraw(amount)}: subtract a {@code float} amount from the balance</li>
+ *   <li>{@code toString()}: returns a human-friendly representation of the account balance, eg {@code $20.50}</li>
  * </ul>
  */
 public class SimpleBankAccount {

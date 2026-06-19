@@ -11,13 +11,13 @@ package edu.rit.swen352.tdd.hard;
  * <p>
  * You must implement these features:
  * <ul>
- *   <li>constructor: with varargs of initial elements</li>
- *   <li>isEmpty: queries if the set is empty</li>
- *   <li>size: queries how many elements in the set</li>
- *   <li>contains: queries whether the supplied object exists (by equality) in the set</li>
- *   <li>add: add an element to the set; no-op if the element is already in the set (by equality)</li>
- *   <li>remove: remove an element by equality</li>
- *   <li>map: creates a new set where each element is transformed by a {@link java.util.function.Function}</li>
+ *   <li>constructor: a ctor that supplies an initial capacity</li>
+ *   <li>{@code isEmpty()}: queries if the set is empty</li>
+ *   <li>{@code size():int}: queries how many elements in the set</li>
+ *   <li>{@code contains(element:T):boolean}: queries whether the supplied object exists (by equality) in the set</li>
+ *   <li>{@code add(element:T)}: add an element to the set; no-op if the element is already in the set (by equality)</li>
+ *   <li>{@code remove(element:T)}: remove an element by equality</li>
+ *   <li>{@code map(Function<T,F>):MySet<F>}: creates a new set where each element is transformed by a {@link java.util.function.Function}</li>
  *   <li>NFR: the {@code contains} method executes in O(1) (<em>constant</em>) time</li>
  * </ul>
  *
