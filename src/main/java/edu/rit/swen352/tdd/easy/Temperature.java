@@ -6,6 +6,7 @@ package edu.rit.swen352.tdd.easy;
  * <p>
  * This must be an immutable
  * <a href='https://en.wikipedia.org/wiki/Value_object'>Value Object</a>.
+ * Conversions must create new instances.
  * </p>
  *
  * <p>
