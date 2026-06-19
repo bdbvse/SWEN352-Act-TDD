@@ -1,6 +1,7 @@
 package edu.rit.swen352.tdd.sample;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,4 +11,14 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class CounterTest {
 
+  @Nested
+  @DisplayName("Constructor Tests")
+  class ConstructorTests {
+    @Test
+    @DisplayName("all-arg ctor")
+    void ctor_1() {
+      Counter counter = new Counter(1, 10);
+      assertNotNull(counter);
+    }
+  }
 }
