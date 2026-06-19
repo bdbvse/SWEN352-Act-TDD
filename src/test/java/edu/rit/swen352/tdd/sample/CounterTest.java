@@ -27,5 +27,12 @@ class CounterTest {
       Counter counter = new Counter(1);
       assertNotNull(counter);
     }
+
+    @Test
+    @DisplayName("default both bounds")
+    void ctor_3() {
+      Counter counter = new Counter();
+      assertNotNull(counter);
+    }
   }
 }
