@@ -28,7 +28,7 @@ class CounterTest {
       assertAll("group assertions"
         , () -> assertNotNull(counter)
         , () -> assertEquals(lower, counter.getLower(), "lower bound is incorrect")
-        , () -> assertEquals(upper, counter.upper, "upper bound is incorrect")
+        , () -> assertEquals(upper, counter.getUpper(), "upper bound is incorrect")
       );
     }
 
@@ -45,7 +45,7 @@ class CounterTest {
       assertAll("group assertions"
         , () -> assertNotNull(counter)
         , () -> assertEquals(lower, counter.getLower(), "lower bound is incorrect")
-        , () -> assertEquals(Integer.MAX_VALUE, counter.upper, "upper bound is incorrect")
+        , () -> assertEquals(Integer.MAX_VALUE, counter.getUpper(), "upper bound is incorrect")
       );
     }
 
@@ -59,7 +59,7 @@ class CounterTest {
       assertAll("group assertions"
         , () -> assertNotNull(counter)
         , () -> assertEquals(0, counter.getLower(), "lower bound is incorrect")
-        , () -> assertEquals(Integer.MAX_VALUE, counter.upper, "upper bound is incorrect")
+        , () -> assertEquals(Integer.MAX_VALUE, counter.getUpper(), "upper bound is incorrect")
       );
     }
   }

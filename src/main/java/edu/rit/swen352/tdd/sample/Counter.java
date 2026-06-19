@@ -41,4 +41,8 @@ public class Counter {
   public int getLower() {
     return lower;
   }
+  public int getUpper() {
+    assert false : "Not yet implemented";
+    return 0;
+  }
 }
