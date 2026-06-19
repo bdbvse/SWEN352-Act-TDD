@@ -20,5 +20,12 @@ class CounterTest {
       Counter counter = new Counter(1, 10);
       assertNotNull(counter);
     }
+
+    @Test
+    @DisplayName("default upper bound")
+    void ctor_2() {
+      Counter counter = new Counter(1);
+      assertNotNull(counter);
+    }
   }
 }
