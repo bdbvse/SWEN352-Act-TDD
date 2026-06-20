@@ -26,6 +26,7 @@ package edu.rit.swen352.tdd.sample;
 public class Counter {
   private final int lower;
   private final int upper;
+  private int count = 0;
 
   public Counter(int lower, int upper) {
     this.lower = lower;
@@ -43,5 +44,9 @@ public class Counter {
   }
   public int getUpper() {
     return upper;
+  }
+  public int getCount() {
+    assert false : "Not yet implemented";
+    return 0;
   }
 }

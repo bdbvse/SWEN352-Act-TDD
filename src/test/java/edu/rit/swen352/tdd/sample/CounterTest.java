@@ -19,6 +19,7 @@ class CounterTest {
       , () -> assertNotNull(CuT)
       , () -> assertEquals(1, CuT.getLower(), "Lower bound is correct")
       , () -> assertEquals(10, CuT.getUpper(), "Upper bound is correct")
+      , () -> assertEquals(1, CuT.getCount(), "Count is correct")
     );
   }
 
@@ -30,6 +31,7 @@ class CounterTest {
       , () -> assertNotNull(CuT)
       , () -> assertEquals(1, CuT.getLower(), "Lower bound is correct")
       , () -> assertEquals(Integer.MAX_VALUE, CuT.getUpper(), "Upper bound is correct")
+      , () -> assertEquals(1, CuT.getCount(), "Count is correct")
     );
   }
 
@@ -41,6 +43,7 @@ class CounterTest {
       , () -> assertNotNull(CuT)
       , () -> assertEquals(0, CuT.getLower(), "Lower bound is correct")
       , () -> assertEquals(Integer.MAX_VALUE, CuT.getUpper(), "Upper bound is correct")
+      , () -> assertEquals(0, CuT.getCount(), "Count is correct")
     );
   }
 }
