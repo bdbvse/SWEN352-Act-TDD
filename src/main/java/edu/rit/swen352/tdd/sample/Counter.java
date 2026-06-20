@@ -62,6 +62,6 @@ public class Counter {
   static final String INCREMENT_ERROR = "count is already at upper limit";
 
   public void decrement() {
-    assert false : "Not yet implemented";
+    count--;
   }
 }
