@@ -54,6 +54,6 @@ public class Counter {
   }
 
   void increment() {
-    assert false : "Not yet implemented";
+    count++;
   }
 }
