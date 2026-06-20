@@ -52,4 +52,8 @@ public class Counter {
   public int getCount() {
     return count;
   }
+
+  void increment() {
+    assert false : "Not yet implemented";
+  }
 }

@@ -56,4 +56,15 @@ class CounterTest {
       , () -> assertEquals(0, CuT.getCount(), "Count is correct")
     );
   }
+
+  @Test
+  @DisplayName("increment with valid range")
+  void increment_1() {
+    // Arrange
+    final Counter CuT = new Counter(4,5);
+    // Act
+    CuT.increment();
+    // Assert
+    assertEquals(5, CuT.getCount());
+  }
 }
