@@ -82,4 +82,17 @@ class CounterTest {
       , () -> assertEquals(Counter.INCREMENT_ERROR, e.getMessage())
     );
   }
+
+  @Test
+  @DisplayName("decrement with valid range")
+  void decrement_1() {
+    // Arrange
+    final Counter CuT = new Counter(4,5);
+    // Act
+    CuT.increment();
+    CuT.decrement();
+    // Assert
+    assertEquals(4, CuT.getCount());
+  }
+
 }
