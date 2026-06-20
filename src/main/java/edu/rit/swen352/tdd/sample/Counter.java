@@ -24,7 +24,12 @@ package edu.rit.swen352.tdd.sample;
  * </ul>
  */
 public class Counter {
+  final int lower;
+  final int upper;
+
   public Counter(int lower, int upper) {
+    this.lower = lower;
+    this.upper = upper;
   }
   public Counter(int lower) {
     this(lower, Integer.MAX_VALUE);
