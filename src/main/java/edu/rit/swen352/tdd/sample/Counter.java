@@ -24,24 +24,4 @@ package edu.rit.swen352.tdd.sample;
  * </ul>
  */
 public class Counter {
-  private final int lower;
-  final int upper;
-
-  public Counter(int lower, int upper) {
-    this.lower = lower;
-    this.upper = upper;
-  }
-  public Counter(int lower) {
-    this(lower, Integer.MAX_VALUE);
-  }
-  public Counter() {
-    this(0);
-  }
-
-  public int getLower() {
-    return lower;
-  }
-  public int getUpper() {
-    return upper;
-  }
 }
