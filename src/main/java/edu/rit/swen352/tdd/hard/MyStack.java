@@ -34,6 +34,12 @@ package edu.rit.swen352.tdd.hard;
  *         <li>throws {@link java.util.NoSuchElementException} if the stack is empty</li>
  *       </ul>
  *     </li>
+ *     <li>{@code peek():T}:
+ *       <ul>
+ *         <li>return the top element of the stack; leave the stack unchanged</li>
+ *         <li>throws {@link java.util.NoSuchElementException} if the stack is empty</li>
+ *       </ul>
+ *     </li>
  *   </ul>
  * </p>
  *
