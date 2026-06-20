@@ -17,7 +17,7 @@ class CounterTest {
     final Counter CuT = new Counter(1, 10);
     assertAll("group assertions"
       , () -> assertNotNull(CuT)
-      , () -> assertEquals(1, CuT.lower, "Lower bound is correct")
+      , () -> assertEquals(1, CuT.getLower(), "Lower bound is correct")
       , () -> assertEquals(10, CuT.upper, "Upper bound is correct")
     );
   }
@@ -28,7 +28,7 @@ class CounterTest {
     final Counter CuT = new Counter(1);
     assertAll("group assertions"
       , () -> assertNotNull(CuT)
-      , () -> assertEquals(1, CuT.lower, "Lower bound is correct")
+      , () -> assertEquals(1, CuT.getLower(), "Lower bound is correct")
       , () -> assertEquals(Integer.MAX_VALUE, CuT.upper, "Upper bound is correct")
     );
   }
@@ -39,7 +39,7 @@ class CounterTest {
     final Counter CuT = new Counter();
     assertAll("group assertions"
       , () -> assertNotNull(CuT)
-      , () -> assertEquals(0, CuT.lower, "Lower bound is correct")
+      , () -> assertEquals(0, CuT.getLower(), "Lower bound is correct")
       , () -> assertEquals(Integer.MAX_VALUE, CuT.upper, "Upper bound is correct")
     );
   }

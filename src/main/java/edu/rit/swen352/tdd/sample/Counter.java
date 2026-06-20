@@ -37,4 +37,9 @@ public class Counter {
   public Counter() {
     this(0);
   }
+
+  public int getLower() {
+    assert false : "not yet implemented";
+    return 0;
+  }
 }
