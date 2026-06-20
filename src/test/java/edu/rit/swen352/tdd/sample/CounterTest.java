@@ -29,7 +29,8 @@ class CounterTest {
   @Test
   @DisplayName("ctor rejects lower >= upper")
   void ctor_1_fail() {
-    assertThrows(IllegalArgumentException.class, () -> new Counter(10, 1));
+    final Exception e = assertThrows(IllegalArgumentException.class, () -> new Counter(10, 1));
+    assertEquals("lower must be less than upper", e.getMessage());
   }
 
   @Test

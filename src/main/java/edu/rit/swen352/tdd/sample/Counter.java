@@ -29,6 +29,9 @@ public class Counter {
   private int count = 0;
 
   public Counter(int lower, int upper) {
+    if (lower >= upper) {
+      throw new IllegalArgumentException("lower must be less than upper");
+    }
     this.lower = lower;
     this.upper = upper;
     this.count = lower;
