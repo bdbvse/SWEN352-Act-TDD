@@ -27,6 +27,12 @@ class CounterTest {
   }
 
   @Test
+  @DisplayName("ctor rejects lower >= upper")
+  void ctor_1_fail() {
+    assertThrows(IllegalArgumentException.class, () -> new Counter(10, 1));
+  }
+
+  @Test
   @DisplayName("ctor with only lower bound")
   void ctor_2() {
     final Counter CuT = new Counter(1);
