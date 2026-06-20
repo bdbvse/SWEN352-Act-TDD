@@ -25,6 +25,5 @@ package edu.rit.swen352.tdd.sample;
  */
 public class Counter {
   public Counter(int lower, int upper) {
-    assert false : "Not yet implemented";
   }
 }
