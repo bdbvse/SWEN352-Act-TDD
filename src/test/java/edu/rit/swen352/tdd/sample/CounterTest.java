@@ -3,6 +3,8 @@ package edu.rit.swen352.tdd.sample;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,15 +13,16 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class CounterTest {
 
-  @Test
+  @ParameterizedTest(name = "Test lower={0}, upper={1}")
+  @CsvSource({"1,10", "42,47", "5,10"})
   @DisplayName("ctor with both bounds")
-  void ctor_1() {
-    final Counter CuT = new Counter(1, 10);
+  void ctor_1(int lower, int upper) {
+    final Counter CuT = new Counter(lower, upper);
     assertAll("group assertions"
       , () -> assertNotNull(CuT)
-      , () -> assertEquals(1, CuT.getLower(), "Lower bound is correct")
-      , () -> assertEquals(10, CuT.getUpper(), "Upper bound is correct")
-      , () -> assertEquals(1, CuT.getCount(), "Count is correct")
+      , () -> assertEquals(lower, CuT.getLower(), "Lower bound is correct")
+      , () -> assertEquals(upper, CuT.getUpper(), "Upper bound is correct")
+      , () -> assertEquals(lower, CuT.getCount(), "Count is correct")
     );
   }
 
