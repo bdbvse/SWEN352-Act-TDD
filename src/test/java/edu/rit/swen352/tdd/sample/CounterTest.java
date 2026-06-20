@@ -95,4 +95,18 @@ class CounterTest {
     assertEquals(4, CuT.getCount());
   }
 
+  @Test
+  @DisplayName("decrement below the lower bound must fail")
+  void decrement_2() {
+    // Arrange
+    final Counter CuT = new Counter(4,5);
+    // Act
+    CuT.decrement();
+    final Exception e = assertThrows(IllegalStateException.class, () -> CuT.increment());
+    // Assert
+    assertAll("group assertions"
+      , () -> assertEquals(5, CuT.getCount())
+    );
+  }
+
 }
