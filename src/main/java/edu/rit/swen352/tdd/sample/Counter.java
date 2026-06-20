@@ -26,4 +26,8 @@ package edu.rit.swen352.tdd.sample;
 public class Counter {
   public Counter(int lower, int upper) {
   }
+  public Counter(int lower) {
+    this(lower, Integer.MAX_VALUE);
+    assert false : "not yet implemented";
+  }
 }

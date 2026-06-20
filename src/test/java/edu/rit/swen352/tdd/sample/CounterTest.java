@@ -17,4 +17,11 @@ class CounterTest {
     final Counter CuT = new Counter(1, 10);
     assertNotNull(CuT);
   }
+
+  @Test
+  @DisplayName("ctor with only lower bound")
+  void ctor_2() {
+    final Counter CuT = new Counter(1);
+    assertNotNull(CuT);
+  }
 }
