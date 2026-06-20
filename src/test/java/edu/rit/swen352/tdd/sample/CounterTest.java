@@ -101,11 +101,11 @@ class CounterTest {
     // Arrange
     final Counter CuT = new Counter(4,5);
     // Act
-    CuT.decrement();
-    final Exception e = assertThrows(IllegalStateException.class, () -> CuT.increment());
+    final Exception e = assertThrows(IllegalStateException.class, () -> CuT.decrement());
     // Assert
     assertAll("group assertions"
-      , () -> assertEquals(5, CuT.getCount())
+      , () -> assertEquals(4, CuT.getCount())
+      , () -> assertEquals(Counter.DECREMENT_ERROR, e.getMessage())
     );
   }
 

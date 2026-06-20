@@ -62,6 +62,10 @@ public class Counter {
   static final String INCREMENT_ERROR = "count is already at upper limit";
 
   public void decrement() {
+    if (count <= lower) {
+      throw new IllegalStateException(DECREMENT_ERROR);
+    }
     count--;
   }
+  static final String DECREMENT_ERROR = "count is already at lower limit";
 }
