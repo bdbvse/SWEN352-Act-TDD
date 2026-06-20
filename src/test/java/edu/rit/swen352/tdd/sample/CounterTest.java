@@ -67,4 +67,16 @@ class CounterTest {
     // Assert
     assertEquals(5, CuT.getCount());
   }
+
+  @Test
+  @DisplayName("increment outside of upper")
+  void increment_2() {
+    // Arrange
+    final Counter CuT = new Counter(4,5);
+    // Act
+    CuT.increment();
+    final Exception e = assertThrows(IllegalStateException.class, () -> CuT.increment());
+    // Assert
+    assertEquals(5, CuT.getCount());
+  }
 }
