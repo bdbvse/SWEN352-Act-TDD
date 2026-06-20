@@ -29,4 +29,8 @@ public class Counter {
   public Counter(int lower) {
     this(lower, Integer.MAX_VALUE);
   }
+  public Counter() {
+    this(0);
+    assert false : "Not yet implemented";
+  }
 }

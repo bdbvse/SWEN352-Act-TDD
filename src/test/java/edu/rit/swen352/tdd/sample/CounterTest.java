@@ -24,4 +24,11 @@ class CounterTest {
     final Counter CuT = new Counter(1);
     assertNotNull(CuT);
   }
+
+  @Test
+  @DisplayName("ctor with no bounds supplied")
+  void ctor_3() {
+    final Counter CuT = new Counter();
+    assertNotNull(CuT);
+  }
 }
