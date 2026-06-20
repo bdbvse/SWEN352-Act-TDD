@@ -11,4 +11,10 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class CounterTest {
 
+  @Test
+  @DisplayName("ctor with both bounds")
+  void ctor_1() {
+    final Counter CuT = new Counter(1, 10);
+    assertNotNull(CuT);
+  }
 }
