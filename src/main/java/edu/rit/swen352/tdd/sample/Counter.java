@@ -54,6 +54,10 @@ public class Counter {
   }
 
   void increment() {
+    if (count >= upper) {
+      throw new IllegalStateException(INCREMENT_ERROR);
+    }
     count++;
   }
+  static final String INCREMENT_ERROR = "count is already at upper limit";
 }

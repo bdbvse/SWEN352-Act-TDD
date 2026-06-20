@@ -77,6 +77,9 @@ class CounterTest {
     CuT.increment();
     final Exception e = assertThrows(IllegalStateException.class, () -> CuT.increment());
     // Assert
-    assertEquals(5, CuT.getCount());
+    assertAll("group assertions"
+      , () -> assertEquals(5, CuT.getCount())
+      , () -> assertEquals(Counter.INCREMENT_ERROR, e.getMessage())
+    );
   }
 }
