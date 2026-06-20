@@ -31,6 +31,7 @@ public class Counter {
   public Counter(int lower, int upper) {
     this.lower = lower;
     this.upper = upper;
+    this.count = lower;
   }
   public Counter(int lower) {
     this(lower, Integer.MAX_VALUE);
@@ -46,7 +47,6 @@ public class Counter {
     return upper;
   }
   public int getCount() {
-    assert false : "Not yet implemented";
-    return 0;
+    return count;
   }
 }
