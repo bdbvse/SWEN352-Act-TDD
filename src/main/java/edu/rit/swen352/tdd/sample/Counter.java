@@ -31,6 +31,5 @@ public class Counter {
   }
   public Counter() {
     this(0);
-    assert false : "Not yet implemented";
   }
 }
