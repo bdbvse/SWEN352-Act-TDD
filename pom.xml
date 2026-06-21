@@ -28,7 +28,7 @@
 
     <!-- Test build dependency versions -->
     <maven.surefire.version>3.2.5</maven.surefire.version>
-    <jacoco.version>0.8.13</jacoco.version>
+    <jacoco.version>0.8.14</jacoco.version>
 
   </properties>
 
