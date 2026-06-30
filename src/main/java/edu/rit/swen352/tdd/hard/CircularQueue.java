@@ -29,9 +29,9 @@ import java.util.NoSuchElementException;
  *       <li>throws {@link IllegalStateException} if the queue is full</li>
  *     </ul>
  *   </li>
- *   <li>{@code remove(element:T)}:
+ *   <li>{@code remove()}:
  *     <ul>
- *       <li>removes an element from the front of the queue if it is not empty</li>
+ *       <li>removes the top-most element of the queue if it is not empty</li>
  *       <li>throws {@link NoSuchElementException} if the queue is empty</li>
  *     </ul>
  *   </li>
