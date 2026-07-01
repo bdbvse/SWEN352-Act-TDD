@@ -13,7 +13,7 @@ package edu.rit.swen352.tdd.hard;
  *   <li>{@code get(index):T}: returns the element at a specific index;
  *     throw {@link java.util.NoSuchElementException} if the index is outside the size of the list</li>
  *   <li>{@code add(element:T)}: add an element to the end of the list</li>
- *   <li>{@code remove(element:T)}: remove an element by index</li>
+ *   <li>{@code remove(idx:int):T}: remove an element by index</li>
  *   <li>{@code forEach(Consumer)}: iterates over each element and executes the {@link java.util.function.Consumer} parameter</li>
  * </ul>
  *
