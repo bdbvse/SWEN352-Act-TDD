@@ -38,7 +38,7 @@ package edu.rit.swen352.tdd.hard;
  *   <li>{@code getValue()}: return the value of the measurement</li>
  *   <li>{@code getUnits()}: return the units of the measurement</li>
  *   <li>{@code toString()}: returns a human-friendly representation, eg "9.8m/s^2"</li>
- *   <li>conversion: convert the measurement to a new set of compatible units</li>
+ *   <li>{@code convertTo(units)}: convert the measurement to a new set of compatible units</li>
  *   <li>{@code addition(X)}: add two measurements {@code (this + X)}
  *     <ul>
  *       <li>throw an exception if the units do not match</li>
