@@ -1,5 +1,17 @@
 package edu.rit.swen352.tdd.hard;
 
+
+/**
+ * An exception for the Measurement operations when two units
+ * are incompatible with each other.
+ */
+class IncompatibleUnitsException extends Exception {
+  public IncompatibleUnitsException(String message) {
+    super(message);
+  }
+}
+
+
 /**
  * A Measurement is a numeric value with a unit of measure.
  * Examples: 100kg, 5280ft, 47m^2, 55mph, and 9.8m/s^2.
