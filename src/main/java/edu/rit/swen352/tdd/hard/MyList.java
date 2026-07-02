@@ -8,7 +8,7 @@ package edu.rit.swen352.tdd.hard;
  * You must implement these features:
  * <ul>
  *   <li>constructor: a ctor that supplies an initial capacity</li>
- *   <li>{@code isEmpty()}: queries if the list is empty</li>
+ *   <li>{@code isEmpty():boolean}: queries if the list is empty</li>
  *   <li>{@code size():int}: queries how many elements in the list</li>
  *   <li>{@code get(index):T}: returns the element at a specific index;
  *     throw {@link java.util.NoSuchElementException} if the index is outside the size of the list</li>
