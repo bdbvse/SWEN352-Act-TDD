@@ -24,4 +24,48 @@ package edu.rit.swen352.tdd.sample;
  * </ul>
  */
 public class Counter {
+  private final int lower;
+  private final int upper;
+  private int count = 0;
+
+  public Counter(int lower, int upper) {
+    if (lower >= upper) {
+      throw new IllegalArgumentException("lower must be less than upper");
+    }
+    this.lower = lower;
+    this.upper = upper;
+    this.count = lower;
+  }
+  public Counter(int lower) {
+    this(lower, Integer.MAX_VALUE);
+  }
+  public Counter() {
+    this(0);
+  }
+
+  public int getLower() {
+    return lower;
+  }
+  public int getUpper() {
+    return upper;
+  }
+  public int getCount() {
+    return count;
+  }
+
+  void increment() {
+    if (count >= upper) {
+      throw new IllegalStateException(INCREMENT_ERROR);
+    }
+    count++;
+  }
+  static final String INCREMENT_ERROR = "count is already at upper limit";
+
+  public void decrement() {
+    if (count <= lower) {
+      throw new IllegalStateException(DECREMENT_ERROR);
+    }
+    count--;
+  }
+  static final String DECREMENT_ERROR = "count is already at lower limit";
 }
